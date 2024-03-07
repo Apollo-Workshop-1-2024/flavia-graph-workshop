@@ -145,9 +145,9 @@ type Review @key(fields:"id") {
   product:Product!
   user:User!
 }
-#"""
-#A Subscription for whenever a new review has been added.
-#"""
-#type Subscription {
-#ADD SUBSCRIPTION FIELDS AND RETURN TYPES HERE
-#}
+"""
+A Subscription for whenever a new review has been added.
+"""
+type Subscription {
+  reviewAdded:Review
+}
